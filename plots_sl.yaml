@@ -1,0 +1,197 @@
+common_opts:
+  lumi: 138
+  llabel: "e/$\\mu$ + jets"
+  outputdir: plots
+  figsize: [18, 12]
+  cmslabelmode: 2
+  cmspadding: 0.03
+  legendloc: "upper center"
+  legendanchor: [0.45, 0.80, 0.2, 0.15]
+  legendcol: 2
+  xlabel: BDT bins
+  ylabel_main: Events / bin
+  ylabel_ratio: Data / Sim
+  ratio: true
+  logy: true
+  logy_legacy: true
+  whitespace: 0.3
+  mountainrange: true
+plots:
+  - outputname: BDTpostfit_L_v3_logy
+    hepdataname: figure_2
+    xrange: [0, 1]
+    #yrange: [0.02, 2000]
+    ratiorange: [0.6, 1.4]
+    file: output_shapes_sb_splitjes_R18bins_BDT.root
+    mountainrange_labels: 
+    - "$\\mathit{N}_{RT} \\geq 1$\n $\\mathit{N}_b = 3$\n $\\mathit{N}_j = 8$"
+    - "$\\mathit{N}_{RT} = 0$\n $\\mathit{N}_b \\geq 4$\n $\\mathit{N}_j = 8$"
+    - "$\\mathit{N}_{RT} \\geq 1$\n $\\mathit{N}_b \\geq 4$\n $\\mathit{N}_j = 8$"
+    ordering:
+    - tttt
+    - ewk
+    - top
+    - ttH
+    - ttnobb
+    - ttbb
+    processmap:
+    - name: tttt
+      histname:
+      - - R16_tttt_isE_nHOT1p_nT0p_nW0p_nB3_nJ8_0_R16_postfit/tttt
+        - R17_tttt_isE_nHOT1p_nT0p_nW0p_nB3_nJ8_0_R17_postfit/tttt
+        - R18_tttt_isE_nHOT1p_nT0p_nW0p_nB3_nJ8_0_R18_postfit/tttt
+        - R16_tttt_isM_nHOT1p_nT0p_nW0p_nB3_nJ8_0_R16_postfit/tttt
+        - R17_tttt_isM_nHOT1p_nT0p_nW0p_nB3_nJ8_0_R17_postfit/tttt
+        - R18_tttt_isM_nHOT1p_nT0p_nW0p_nB3_nJ8_0_R18_postfit/tttt
+      - - R16_tttt_isE_nHOT0_nT0p_nW0p_nB4p_nJ8_0_R16_postfit/tttt
+        - R17_tttt_isE_nHOT0_nT0p_nW0p_nB4p_nJ8_0_R17_postfit/tttt
+        - R18_tttt_isE_nHOT0_nT0p_nW0p_nB4p_nJ8_0_R18_postfit/tttt
+        - R16_tttt_isM_nHOT0_nT0p_nW0p_nB4p_nJ8_0_R16_postfit/tttt
+        - R17_tttt_isM_nHOT0_nT0p_nW0p_nB4p_nJ8_0_R17_postfit/tttt
+        - R18_tttt_isM_nHOT0_nT0p_nW0p_nB4p_nJ8_0_R18_postfit/tttt
+      - - R16_tttt_isE_nHOT1p_nT0p_nW0p_nB4p_nJ8_0_R16_postfit/tttt
+        - R17_tttt_isE_nHOT1p_nT0p_nW0p_nB4p_nJ8_0_R17_postfit/tttt
+        - R18_tttt_isE_nHOT1p_nT0p_nW0p_nB4p_nJ8_0_R18_postfit/tttt
+        - R16_tttt_isM_nHOT1p_nT0p_nW0p_nB4p_nJ8_0_R16_postfit/tttt
+        - R17_tttt_isM_nHOT1p_nT0p_nW0p_nB4p_nJ8_0_R17_postfit/tttt
+        - R18_tttt_isM_nHOT1p_nT0p_nW0p_nB4p_nJ8_0_R18_postfit/tttt
+    - name: ewk
+      histname:
+      - - R16_tttt_isE_nHOT1p_nT0p_nW0p_nB3_nJ8_0_R16_postfit/ewk
+        - R17_tttt_isE_nHOT1p_nT0p_nW0p_nB3_nJ8_0_R17_postfit/ewk
+        - R18_tttt_isE_nHOT1p_nT0p_nW0p_nB3_nJ8_0_R18_postfit/ewk
+        - R16_tttt_isM_nHOT1p_nT0p_nW0p_nB3_nJ8_0_R16_postfit/ewk
+        - R17_tttt_isM_nHOT1p_nT0p_nW0p_nB3_nJ8_0_R17_postfit/ewk
+        - R18_tttt_isM_nHOT1p_nT0p_nW0p_nB3_nJ8_0_R18_postfit/ewk
+      - - R16_tttt_isE_nHOT0_nT0p_nW0p_nB4p_nJ8_0_R16_postfit/ewk
+        - R17_tttt_isE_nHOT0_nT0p_nW0p_nB4p_nJ8_0_R17_postfit/ewk
+        - R18_tttt_isE_nHOT0_nT0p_nW0p_nB4p_nJ8_0_R18_postfit/ewk
+        - R16_tttt_isM_nHOT0_nT0p_nW0p_nB4p_nJ8_0_R16_postfit/ewk
+        - R17_tttt_isM_nHOT0_nT0p_nW0p_nB4p_nJ8_0_R17_postfit/ewk
+        - R18_tttt_isM_nHOT0_nT0p_nW0p_nB4p_nJ8_0_R18_postfit/ewk
+      - - R16_tttt_isE_nHOT1p_nT0p_nW0p_nB4p_nJ8_0_R16_postfit/ewk
+        - R17_tttt_isE_nHOT1p_nT0p_nW0p_nB4p_nJ8_0_R17_postfit/ewk
+        - R18_tttt_isE_nHOT1p_nT0p_nW0p_nB4p_nJ8_0_R18_postfit/ewk
+        - R16_tttt_isM_nHOT1p_nT0p_nW0p_nB4p_nJ8_0_R16_postfit/ewk
+        - R17_tttt_isM_nHOT1p_nT0p_nW0p_nB4p_nJ8_0_R17_postfit/ewk
+        - R18_tttt_isM_nHOT1p_nT0p_nW0p_nB4p_nJ8_0_R18_postfit/ewk
+    - name: top
+      histname:
+      - - R16_tttt_isE_nHOT1p_nT0p_nW0p_nB3_nJ8_0_R16_postfit/top
+        - R17_tttt_isE_nHOT1p_nT0p_nW0p_nB3_nJ8_0_R17_postfit/top
+        - R18_tttt_isE_nHOT1p_nT0p_nW0p_nB3_nJ8_0_R18_postfit/top
+        - R16_tttt_isM_nHOT1p_nT0p_nW0p_nB3_nJ8_0_R16_postfit/top
+        - R17_tttt_isM_nHOT1p_nT0p_nW0p_nB3_nJ8_0_R17_postfit/top
+        - R18_tttt_isM_nHOT1p_nT0p_nW0p_nB3_nJ8_0_R18_postfit/top
+      - - R16_tttt_isE_nHOT0_nT0p_nW0p_nB4p_nJ8_0_R16_postfit/top
+        - R17_tttt_isE_nHOT0_nT0p_nW0p_nB4p_nJ8_0_R17_postfit/top
+        - R18_tttt_isE_nHOT0_nT0p_nW0p_nB4p_nJ8_0_R18_postfit/top
+        - R16_tttt_isM_nHOT0_nT0p_nW0p_nB4p_nJ8_0_R16_postfit/top
+        - R17_tttt_isM_nHOT0_nT0p_nW0p_nB4p_nJ8_0_R17_postfit/top
+        - R18_tttt_isM_nHOT0_nT0p_nW0p_nB4p_nJ8_0_R18_postfit/top
+      - - R16_tttt_isE_nHOT1p_nT0p_nW0p_nB4p_nJ8_0_R16_postfit/top
+        - R17_tttt_isE_nHOT1p_nT0p_nW0p_nB4p_nJ8_0_R17_postfit/top
+        - R18_tttt_isE_nHOT1p_nT0p_nW0p_nB4p_nJ8_0_R18_postfit/top
+        - R16_tttt_isM_nHOT1p_nT0p_nW0p_nB4p_nJ8_0_R16_postfit/top
+        - R17_tttt_isM_nHOT1p_nT0p_nW0p_nB4p_nJ8_0_R17_postfit/top
+        - R18_tttt_isM_nHOT1p_nT0p_nW0p_nB4p_nJ8_0_R18_postfit/top
+    - name: ttH
+      histname:
+      - - R16_tttt_isE_nHOT1p_nT0p_nW0p_nB3_nJ8_0_R16_postfit/ttH
+        - R17_tttt_isE_nHOT1p_nT0p_nW0p_nB3_nJ8_0_R17_postfit/ttH
+        - R18_tttt_isE_nHOT1p_nT0p_nW0p_nB3_nJ8_0_R18_postfit/ttH
+        - R16_tttt_isM_nHOT1p_nT0p_nW0p_nB3_nJ8_0_R16_postfit/ttH
+        - R17_tttt_isM_nHOT1p_nT0p_nW0p_nB3_nJ8_0_R17_postfit/ttH
+        - R18_tttt_isM_nHOT1p_nT0p_nW0p_nB3_nJ8_0_R18_postfit/ttH
+      - - R16_tttt_isE_nHOT0_nT0p_nW0p_nB4p_nJ8_0_R16_postfit/ttH
+        - R17_tttt_isE_nHOT0_nT0p_nW0p_nB4p_nJ8_0_R17_postfit/ttH
+        - R18_tttt_isE_nHOT0_nT0p_nW0p_nB4p_nJ8_0_R18_postfit/ttH
+        - R16_tttt_isM_nHOT0_nT0p_nW0p_nB4p_nJ8_0_R16_postfit/ttH
+        - R17_tttt_isM_nHOT0_nT0p_nW0p_nB4p_nJ8_0_R17_postfit/ttH
+        - R18_tttt_isM_nHOT0_nT0p_nW0p_nB4p_nJ8_0_R18_postfit/ttH
+      - - R16_tttt_isE_nHOT1p_nT0p_nW0p_nB4p_nJ8_0_R16_postfit/ttH
+        - R17_tttt_isE_nHOT1p_nT0p_nW0p_nB4p_nJ8_0_R17_postfit/ttH
+        - R18_tttt_isE_nHOT1p_nT0p_nW0p_nB4p_nJ8_0_R18_postfit/ttH
+        - R16_tttt_isM_nHOT1p_nT0p_nW0p_nB4p_nJ8_0_R16_postfit/ttH
+        - R17_tttt_isM_nHOT1p_nT0p_nW0p_nB4p_nJ8_0_R17_postfit/ttH
+        - R18_tttt_isM_nHOT1p_nT0p_nW0p_nB4p_nJ8_0_R18_postfit/ttH
+    - name: ttbb
+      histname:
+      - - R16_tttt_isE_nHOT1p_nT0p_nW0p_nB3_nJ8_0_R16_postfit/ttbb
+        - R17_tttt_isE_nHOT1p_nT0p_nW0p_nB3_nJ8_0_R17_postfit/ttbb
+        - R18_tttt_isE_nHOT1p_nT0p_nW0p_nB3_nJ8_0_R18_postfit/ttbb
+        - R16_tttt_isM_nHOT1p_nT0p_nW0p_nB3_nJ8_0_R16_postfit/ttbb
+        - R17_tttt_isM_nHOT1p_nT0p_nW0p_nB3_nJ8_0_R17_postfit/ttbb
+        - R18_tttt_isM_nHOT1p_nT0p_nW0p_nB3_nJ8_0_R18_postfit/ttbb
+      - - R16_tttt_isE_nHOT0_nT0p_nW0p_nB4p_nJ8_0_R16_postfit/ttbb
+        - R17_tttt_isE_nHOT0_nT0p_nW0p_nB4p_nJ8_0_R17_postfit/ttbb
+        - R18_tttt_isE_nHOT0_nT0p_nW0p_nB4p_nJ8_0_R18_postfit/ttbb
+        - R16_tttt_isM_nHOT0_nT0p_nW0p_nB4p_nJ8_0_R16_postfit/ttbb
+        - R17_tttt_isM_nHOT0_nT0p_nW0p_nB4p_nJ8_0_R17_postfit/ttbb
+        - R18_tttt_isM_nHOT0_nT0p_nW0p_nB4p_nJ8_0_R18_postfit/ttbb
+      - - R16_tttt_isE_nHOT1p_nT0p_nW0p_nB4p_nJ8_0_R16_postfit/ttbb
+        - R17_tttt_isE_nHOT1p_nT0p_nW0p_nB4p_nJ8_0_R17_postfit/ttbb
+        - R18_tttt_isE_nHOT1p_nT0p_nW0p_nB4p_nJ8_0_R18_postfit/ttbb
+        - R16_tttt_isM_nHOT1p_nT0p_nW0p_nB4p_nJ8_0_R16_postfit/ttbb
+        - R17_tttt_isM_nHOT1p_nT0p_nW0p_nB4p_nJ8_0_R17_postfit/ttbb
+        - R18_tttt_isM_nHOT1p_nT0p_nW0p_nB4p_nJ8_0_R18_postfit/ttbb
+    - name: ttnobb
+      histname:
+      - - R16_tttt_isE_nHOT1p_nT0p_nW0p_nB3_nJ8_0_R16_postfit/ttnobb
+        - R17_tttt_isE_nHOT1p_nT0p_nW0p_nB3_nJ8_0_R17_postfit/ttnobb
+        - R18_tttt_isE_nHOT1p_nT0p_nW0p_nB3_nJ8_0_R18_postfit/ttnobb
+        - R16_tttt_isM_nHOT1p_nT0p_nW0p_nB3_nJ8_0_R16_postfit/ttnobb
+        - R17_tttt_isM_nHOT1p_nT0p_nW0p_nB3_nJ8_0_R17_postfit/ttnobb
+        - R18_tttt_isM_nHOT1p_nT0p_nW0p_nB3_nJ8_0_R18_postfit/ttnobb
+      - - R16_tttt_isE_nHOT0_nT0p_nW0p_nB4p_nJ8_0_R16_postfit/ttnobb
+        - R17_tttt_isE_nHOT0_nT0p_nW0p_nB4p_nJ8_0_R17_postfit/ttnobb
+        - R18_tttt_isE_nHOT0_nT0p_nW0p_nB4p_nJ8_0_R18_postfit/ttnobb
+        - R16_tttt_isM_nHOT0_nT0p_nW0p_nB4p_nJ8_0_R16_postfit/ttnobb
+        - R17_tttt_isM_nHOT0_nT0p_nW0p_nB4p_nJ8_0_R17_postfit/ttnobb
+        - R18_tttt_isM_nHOT0_nT0p_nW0p_nB4p_nJ8_0_R18_postfit/ttnobb
+      - - R16_tttt_isE_nHOT1p_nT0p_nW0p_nB4p_nJ8_0_R16_postfit/ttnobb
+        - R17_tttt_isE_nHOT1p_nT0p_nW0p_nB4p_nJ8_0_R17_postfit/ttnobb
+        - R18_tttt_isE_nHOT1p_nT0p_nW0p_nB4p_nJ8_0_R18_postfit/ttnobb
+        - R16_tttt_isM_nHOT1p_nT0p_nW0p_nB4p_nJ8_0_R16_postfit/ttnobb
+        - R17_tttt_isM_nHOT1p_nT0p_nW0p_nB4p_nJ8_0_R17_postfit/ttnobb
+        - R18_tttt_isM_nHOT1p_nT0p_nW0p_nB4p_nJ8_0_R18_postfit/ttnobb
+    - name: total
+      histname:
+      - - R16_tttt_isE_nHOT1p_nT0p_nW0p_nB3_nJ8_0_R16_postfit/TotalProcs
+        - R17_tttt_isE_nHOT1p_nT0p_nW0p_nB3_nJ8_0_R17_postfit/TotalProcs
+        - R18_tttt_isE_nHOT1p_nT0p_nW0p_nB3_nJ8_0_R18_postfit/TotalProcs
+        - R16_tttt_isM_nHOT1p_nT0p_nW0p_nB3_nJ8_0_R16_postfit/TotalProcs
+        - R17_tttt_isM_nHOT1p_nT0p_nW0p_nB3_nJ8_0_R17_postfit/TotalProcs
+        - R18_tttt_isM_nHOT1p_nT0p_nW0p_nB3_nJ8_0_R18_postfit/TotalProcs
+      - - R16_tttt_isE_nHOT0_nT0p_nW0p_nB4p_nJ8_0_R16_postfit/TotalProcs
+        - R17_tttt_isE_nHOT0_nT0p_nW0p_nB4p_nJ8_0_R17_postfit/TotalProcs
+        - R18_tttt_isE_nHOT0_nT0p_nW0p_nB4p_nJ8_0_R18_postfit/TotalProcs
+        - R16_tttt_isM_nHOT0_nT0p_nW0p_nB4p_nJ8_0_R16_postfit/TotalProcs
+        - R17_tttt_isM_nHOT0_nT0p_nW0p_nB4p_nJ8_0_R17_postfit/TotalProcs
+        - R18_tttt_isM_nHOT0_nT0p_nW0p_nB4p_nJ8_0_R18_postfit/TotalProcs
+      - - R16_tttt_isE_nHOT1p_nT0p_nW0p_nB4p_nJ8_0_R16_postfit/TotalProcs
+        - R17_tttt_isE_nHOT1p_nT0p_nW0p_nB4p_nJ8_0_R17_postfit/TotalProcs
+        - R18_tttt_isE_nHOT1p_nT0p_nW0p_nB4p_nJ8_0_R18_postfit/TotalProcs
+        - R16_tttt_isM_nHOT1p_nT0p_nW0p_nB4p_nJ8_0_R16_postfit/TotalProcs
+        - R17_tttt_isM_nHOT1p_nT0p_nW0p_nB4p_nJ8_0_R17_postfit/TotalProcs
+        - R18_tttt_isM_nHOT1p_nT0p_nW0p_nB4p_nJ8_0_R18_postfit/TotalProcs
+    - name: data_obs
+      histname:
+      - - R16_tttt_isE_nHOT1p_nT0p_nW0p_nB3_nJ8_0_R16_postfit/data_obs
+        - R17_tttt_isE_nHOT1p_nT0p_nW0p_nB3_nJ8_0_R17_postfit/data_obs
+        - R18_tttt_isE_nHOT1p_nT0p_nW0p_nB3_nJ8_0_R18_postfit/data_obs
+        - R16_tttt_isM_nHOT1p_nT0p_nW0p_nB3_nJ8_0_R16_postfit/data_obs
+        - R17_tttt_isM_nHOT1p_nT0p_nW0p_nB3_nJ8_0_R17_postfit/data_obs
+        - R18_tttt_isM_nHOT1p_nT0p_nW0p_nB3_nJ8_0_R18_postfit/data_obs
+      - - R16_tttt_isE_nHOT0_nT0p_nW0p_nB4p_nJ8_0_R16_postfit/data_obs
+        - R17_tttt_isE_nHOT0_nT0p_nW0p_nB4p_nJ8_0_R17_postfit/data_obs
+        - R18_tttt_isE_nHOT0_nT0p_nW0p_nB4p_nJ8_0_R18_postfit/data_obs
+        - R16_tttt_isM_nHOT0_nT0p_nW0p_nB4p_nJ8_0_R16_postfit/data_obs
+        - R17_tttt_isM_nHOT0_nT0p_nW0p_nB4p_nJ8_0_R17_postfit/data_obs
+        - R18_tttt_isM_nHOT0_nT0p_nW0p_nB4p_nJ8_0_R18_postfit/data_obs
+      - - R16_tttt_isE_nHOT1p_nT0p_nW0p_nB4p_nJ8_0_R16_postfit/data_obs
+        - R17_tttt_isE_nHOT1p_nT0p_nW0p_nB4p_nJ8_0_R17_postfit/data_obs
+        - R18_tttt_isE_nHOT1p_nT0p_nW0p_nB4p_nJ8_0_R18_postfit/data_obs
+        - R16_tttt_isM_nHOT1p_nT0p_nW0p_nB4p_nJ8_0_R16_postfit/data_obs
+        - R17_tttt_isM_nHOT1p_nT0p_nW0p_nB4p_nJ8_0_R17_postfit/data_obs
+        - R18_tttt_isM_nHOT1p_nT0p_nW0p_nB4p_nJ8_0_R18_postfit/data_obs

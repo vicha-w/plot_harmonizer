@@ -1,0 +1,22 @@
+ewk:
+  propername: EW
+top:
+  propername: TOP
+ttrare:
+  propername: $t\bar{t}$ + rare
+ttV:
+  propername: $t\bar{t}$ + V
+ttH:
+  propername: $t\bar{t}$ + H
+ttnobb:
+  propername: $t\bar{t}$ + 0b
+ttbb:
+  propername: $t\bar{t}$ + $\geq$1b
+qcd:
+  propername: QCD + $t\bar{t}$
+tttt:
+  propername: $t\bar{t}t\bar{t}$
+ttx:
+  propername: $t\bar{t}$ + H and $t\bar{t}$ + V
+other_allhad:
+  propername: Minor bkgs.

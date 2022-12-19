@@ -1,0 +1,96 @@
+common_opts:
+  lumi: 138
+  llabel: "All-hadronic"
+  outputdir: plots
+  figsize: [10, 10]
+  cmslabelmode: 2
+  ratiorange: [0.75, 1.5]
+  xrange: [0, 1]
+  whitespace: 0.5
+  xlabel: "BDT discriminant"
+  ylabel_main: Events / bin
+  ylabel_ratio: Data / Sim
+  ratio: true
+  mountainrange: false
+  logy: false
+plots:
+  - outputname: RT1BT1htbin1
+    hepdataname: figure_3a
+    file: output_shapes_sb.root
+    text: "$\\mathit{N}_{RT} = 1$, $\\mathit{N}_{BT} \\geq 1$\n$\\mathit{H}_T \\geq 1400$ GeV"
+    ordering:
+    - tttt
+    - ttx
+    - other_allhad
+    - qcd
+    processmap:
+    - name: ttx
+      histname: 
+      - RT1BT1htbin1_2016_datacard8_postfit/TTX
+      - RT1BT1htbin1_2017_datacard8_postfit/TTX
+      - RT1BT1htbin1_2018_datacard8_postfit/TTX
+    - name: tttt
+      histname: 
+      - RT1BT1htbin1_2016_datacard8_postfit/TTTT
+      - RT1BT1htbin1_2017_datacard8_postfit/TTTT
+      - RT1BT1htbin1_2018_datacard8_postfit/TTTT
+    - name: other_allhad
+      histname: 
+      - RT1BT1htbin1_2016_datacard8_postfit/other
+      - RT1BT1htbin1_2017_datacard8_postfit/other
+      - RT1BT1htbin1_2018_datacard8_postfit/other
+    - name: qcd
+      histname: 
+      - RT1BT1htbin1_2016_datacard8_postfit/DDBKG
+      - RT1BT1htbin1_2017_datacard8_postfit/DDBKG
+      - RT1BT1htbin1_2018_datacard8_postfit/DDBKG
+    - name: total
+      histname: 
+      - RT1BT1htbin1_2016_datacard8_postfit/TotalProcs
+      - RT1BT1htbin1_2017_datacard8_postfit/TotalProcs
+      - RT1BT1htbin1_2018_datacard8_postfit/TotalProcs
+    - name: data_obs
+      histname: 
+      - RT1BT1htbin1_2016_datacard8_postfit/data_obs
+      - RT1BT1htbin1_2017_datacard8_postfit/data_obs
+      - RT1BT1htbin1_2018_datacard8_postfit/data_obs
+  - outputname: RT2BTALLhtbin1
+    hepdataname: figure_3b
+    file: output_shapes_sb.root
+    text: "$\\mathit{N}_{RT} = 2$\n$\\mathit{H}_T \\geq 1100$ GeV"
+    ordering:
+    - tttt
+    - ttx
+    - other_allhad
+    - qcd
+    processmap:
+    - name: ttx
+      histname:
+      - RT2BTALLhtbin1_2016_datacard11_postfit/TTX
+      - RT2BTALLhtbin1_2017_datacard11_postfit/TTX
+      - RT2BTALLhtbin1_2018_datacard11_postfit/TTX
+    - name: tttt
+      histname: 
+      - RT2BTALLhtbin1_2016_datacard11_postfit/TTTT
+      - RT2BTALLhtbin1_2017_datacard11_postfit/TTTT
+      - RT2BTALLhtbin1_2018_datacard11_postfit/TTTT
+    - name: other_allhad
+      histname: 
+      - RT2BTALLhtbin1_2016_datacard11_postfit/other
+      - RT2BTALLhtbin1_2017_datacard11_postfit/other
+      - RT2BTALLhtbin1_2018_datacard11_postfit/other
+    - name: qcd
+      histname: 
+      - RT2BTALLhtbin1_2016_datacard11_postfit/DDBKG
+      - RT2BTALLhtbin1_2017_datacard11_postfit/DDBKG
+      - RT2BTALLhtbin1_2018_datacard11_postfit/DDBKG
+    - name: total
+      histname: 
+      - RT2BTALLhtbin1_2016_datacard11_postfit/TotalProcs
+      - RT2BTALLhtbin1_2017_datacard11_postfit/TotalProcs
+      - RT2BTALLhtbin1_2018_datacard11_postfit/TotalProcs
+    - name: data_obs
+      histname: 
+      - RT2BTALLhtbin1_2016_datacard11_postfit/data_obs
+      - RT2BTALLhtbin1_2017_datacard11_postfit/data_obs
+      - RT2BTALLhtbin1_2018_datacard11_postfit/data_obs

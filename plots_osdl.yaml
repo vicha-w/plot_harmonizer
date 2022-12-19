@@ -1,0 +1,64 @@
+common_opts:
+  lumi: 101
+  outputdir: plots
+  figsize: [12, 10]
+  xlabel: Jet multiplicity
+  xrange: [4, 9]
+  ylabel_main: Events / bin
+  ylabel_ratio: Data / Sim
+  yrange: [0.5, 200]
+  logy: true
+  logy_legacy: true
+  ratio: true
+  ratiorange: [0.7, 1.2]
+  cmslabelmode: 2
+  legendcol: 2
+  whitespace: 0.5
+  mountainrange: false
+plots:
+  - outputname: OSDL_nJet_nB4p
+    hepdataname: figure_1
+    file: 2022August21_Baseline_OSDL_postfit_yields.root
+    llabel: "OSDL, $\\mathit{N}_b \\geq 4$"
+    customticks:
+    - [4.5, "4"]
+    - [5.5, "5"]
+    - [6.5, "6"]
+    - [7.5, "7"]
+    - [8.5, "$\\geq 8$"]
+    ordering:
+    - tttt
+    - ewk
+    - ttrare
+    - ttV
+    - ttH
+    - ttnobb
+    - ttbb
+    processmap:
+    - name: ewk
+      histname: 
+      - OSDL_4pbtags_yields/EWK
+    - name: ttrare
+      histname: 
+      - OSDL_4pbtags_yields/ttultrarare
+    - name: ttV
+      histname: 
+      - OSDL_4pbtags_yields/ttVJets
+    - name: ttH
+      histname: 
+      - OSDL_4pbtags_yields/ttH
+    - name: ttnobb
+      histname: 
+      - OSDL_4pbtags_yields/ttnobb
+    - name: ttbb
+      histname: 
+      - OSDL_4pbtags_yields/ttbb
+    - name: tttt
+      histname: 
+      - OSDL_4pbtags_yields/tttt
+    - name: total
+      histname: 
+      - OSDL_4pbtags_yields/TotalProcs
+    - name: data_obs
+      histname: 
+      - OSDL_4pbtags_yields/data_obs
