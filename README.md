@@ -18,7 +18,7 @@ python3 plot_harmonizer.py <PLOT_FILE> --colourspec <COLOURSPEC_FILE> --properna
 - `--outputdir`: Output directory. Default is current directory.
 - `--showonly`: Show plots directly on new window. Do not save plots.
 
-This script generates two plot files in PDF and PNG format (unless `--showonly` option is present) and one hepdata YAML file per one plot.
+This script generates two plot files in PDF and PNG format and one hepdata YAML file per one plot. If `--showonly` option is used, the plots will show directly as a new window and all files will not be saved.
 
 ## Plotting file YAML specs
 The file structure is as follows:
