@@ -1,0 +1,3067 @@
+common_opts:
+  lumi: 101
+  outputdir: plots
+  figsize: [12, 10]
+  xlabel: Jet multiplicity
+  ylabel_main: Events / bin
+  ylabel_ratio: Data / Sim
+  logy: true
+  ratio: true
+  ratiorange: [0, 2]
+  cmslabelmode: 2
+  legendcol: 2
+  whitespace: 0.4
+  mountainrange: false
+plots:
+  - outputname: dRbb_nB2
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b = 2$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttbb, ttnobb]
+    xlabel: $\Delta R_{bb}$ 
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___dRbb/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___dRbb/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___dRbb/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___dRbb/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___dRbb/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___dRbb/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___dRbb/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___dRbb/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___dRbb/data_obs" 
+  - outputname: dRll_nB2
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b = 2$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttbb, ttnobb]
+    xlabel: $\Delta R_{\ell\ell}$ 
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___dRll/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___dRll/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___dRll/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___dRll/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___dRll/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___dRll/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___dRll/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___dRll/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___dRll/data_obs" 
+  - outputname: Electron1_eta_nB2
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b = 2$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttbb, ttnobb]
+    xlabel: Leading Electron $\eta$ 
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Electron1_eta/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Electron1_eta/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Electron1_eta/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Electron1_eta/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Electron1_eta/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Electron1_eta/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Electron1_eta/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Electron1_eta/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Electron1_eta/data_obs" 
+  - outputname: Electron1_pt_nB2
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b = 2$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttbb, ttnobb]
+    xlabel: Leading Electron $p_{T}$ (GeV)
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Electron1_pt/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Electron1_pt/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Electron1_pt/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Electron1_pt/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Electron1_pt/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Electron1_pt/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Electron1_pt/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Electron1_pt/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Electron1_pt/data_obs" 
+  # - outputname: Electron_dz_nB2
+  #   file: prefit_PAS_RunII_All.root
+  #   llabel: "OSDL, $\\mathit{N}_b = 2$"
+  #   ordering: [tttt, ewk, ttrare, ttV, ttH, ttbb, ttnobb]
+  #   xlabel: Electron $\Delta z$ 
+  #   xrange: [-0.02, 0.02]
+  #   processmap:
+  #   - name: ewk
+  #     histname: 
+  #     - "HT500_nMediumDeepJetB2_nJet4p___Electron_dz/EWK"
+  #   - name: ttrare
+  #     histname: 
+  #     - "HT500_nMediumDeepJetB2_nJet4p___Electron_dz/tt + rare"
+  #   - name: ttV
+  #     histname: 
+  #     - "HT500_nMediumDeepJetB2_nJet4p___Electron_dz/tt + V"
+  #   - name: ttH
+  #     histname: 
+  #     - "HT500_nMediumDeepJetB2_nJet4p___Electron_dz/tt + H"
+  #   - name: ttnobb
+  #     histname: 
+  #     - "HT500_nMediumDeepJetB2_nJet4p___Electron_dz/tt + !bb"
+  #   - name: ttbb
+  #     histname: 
+  #     - "HT500_nMediumDeepJetB2_nJet4p___Electron_dz/tt + bb"
+  #   - name: tttt
+  #     histname: 
+  #     - "HT500_nMediumDeepJetB2_nJet4p___Electron_dz/tttt"
+  #   - name: total
+  #     histname: 
+  #     - "HT500_nMediumDeepJetB2_nJet4p___Electron_dz/TotalProcs"
+  #   - name: data_obs
+  #     histname: 
+  #     - "HT500_nMediumDeepJetB2_nJet4p___Electron_dz/data_obs" 
+  # - outputname: Electron_ip3d_nB2
+  #   file: prefit_PAS_RunII_All.root
+  #   llabel: "OSDL, $\\mathit{N}_b = 2$"
+  #   ordering: [tttt, ewk, ttrare, ttV, ttH, ttbb, ttnobb]
+  #   xlabel: Electron IP3D 
+  #   xrange: [0, 0.1]
+  #   processmap:
+  #   - name: ewk
+  #     histname: 
+  #     - "HT500_nMediumDeepJetB2_nJet4p___Electron_ip3d/EWK"
+  #   - name: ttrare
+  #     histname: 
+  #     - "HT500_nMediumDeepJetB2_nJet4p___Electron_ip3d/tt + rare"
+  #   - name: ttV
+  #     histname: 
+  #     - "HT500_nMediumDeepJetB2_nJet4p___Electron_ip3d/tt + V"
+  #   - name: ttH
+  #     histname: 
+  #     - "HT500_nMediumDeepJetB2_nJet4p___Electron_ip3d/tt + H"
+  #   - name: ttnobb
+  #     histname: 
+  #     - "HT500_nMediumDeepJetB2_nJet4p___Electron_ip3d/tt + !bb"
+  #   - name: ttbb
+  #     histname: 
+  #     - "HT500_nMediumDeepJetB2_nJet4p___Electron_ip3d/tt + bb"
+  #   - name: tttt
+  #     histname: 
+  #     - "HT500_nMediumDeepJetB2_nJet4p___Electron_ip3d/tttt"
+  #   - name: total
+  #     histname: 
+  #     - "HT500_nMediumDeepJetB2_nJet4p___Electron_ip3d/TotalProcs"
+  #   - name: data_obs
+  #     histname: 
+  #     - "HT500_nMediumDeepJetB2_nJet4p___Electron_ip3d/data_obs" 
+  - outputname: Electron_pfRelIso03_all_nB2
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b = 2$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttbb, ttnobb]
+    xlabel: Electron PF Relative Isolation 
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Electron_pfRelIso03_all/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Electron_pfRelIso03_all/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Electron_pfRelIso03_all/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Electron_pfRelIso03_all/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Electron_pfRelIso03_all/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Electron_pfRelIso03_all/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Electron_pfRelIso03_all/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Electron_pfRelIso03_all/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Electron_pfRelIso03_all/data_obs" 
+  - outputname: Electron_pfRelIso03_chg_nB2
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b = 2$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttbb, ttnobb]
+    xlabel: Electron PF Relative Isolation (charged)
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Electron_pfRelIso03_chg/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Electron_pfRelIso03_chg/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Electron_pfRelIso03_chg/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Electron_pfRelIso03_chg/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Electron_pfRelIso03_chg/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Electron_pfRelIso03_chg/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Electron_pfRelIso03_chg/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Electron_pfRelIso03_chg/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Electron_pfRelIso03_chg/data_obs" 
+  - outputname: H_nB2
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b = 2$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttbb, ttnobb]
+    xlabel: $H$ (GeV)
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___H/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___H/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___H/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___H/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___H/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___H/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___H/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___H/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___H/data_obs" 
+  - outputname: H2M_nB2
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b = 2$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttbb, ttnobb]
+    xlabel: $H^{2M}$ (GeV)
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___H2M/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___H2M/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___H2M/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___H2M/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___H2M/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___H2M/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___H2M/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___H2M/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___H2M/data_obs" 
+  - outputname: HT_nB2
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b = 2$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttbb, ttnobb]
+    xlabel: $H_T$ (GeV)
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___HT/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___HT/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___HT/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___HT/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___HT/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___HT/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___HT/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___HT/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___HT/data_obs" 
+  - outputname: HT2M_nB2
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b = 2$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttbb, ttnobb]
+    xlabel: $H_T^{2M}$ (GeV)
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___HT2M/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___HT2M/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___HT2M/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___HT2M/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___HT2M/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___HT2M/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___HT2M/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___HT2M/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___HT2M/data_obs" 
+  - outputname: HTb_nB2
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b = 2$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttbb, ttnobb]
+    xlabel: $H_T^b$ (GeV)
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___HTb/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___HTb/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___HTb/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___HTb/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___HTb/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___HTb/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___HTb/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___HTb/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___HTb/data_obs" 
+  - outputname: HTH_nB2
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b = 2$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttbb, ttnobb]
+    xlabel: $\\frac{H_T}{H}$
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___HTH/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___HTH/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___HTH/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___HTH/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___HTH/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___HTH/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___HTH/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___HTH/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___HTH/data_obs" 
+  - outputname: HTRat_nB2
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b = 2$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttbb, ttnobb]
+    xlabel: $H_T^{Ratio}$
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___HTRat/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___HTRat/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___HTRat/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___HTRat/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___HTRat/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___HTRat/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___HTRat/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___HTRat/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___HTRat/data_obs" 
+  - outputname: Jet1_DeepJetB_nB2
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b = 2$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttbb, ttnobb]
+    xlabel: Leading $p_T$ Jet b tag Discriminant
+    xrange: [0, 1]
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet1_DeepJetB/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet1_DeepJetB/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet1_DeepJetB/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet1_DeepJetB/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet1_DeepJetB/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet1_DeepJetB/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet1_DeepJetB/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet1_DeepJetB/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet1_DeepJetB/data_obs" 
+  - outputname: Jet1_DeepJetB_sortedjet_nB2
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b = 2$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttbb, ttnobb]
+    xlabel: Leading b tagged Jet b tag Discriminant
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet1_DeepJetB_sortedjet/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet1_DeepJetB_sortedjet/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet1_DeepJetB_sortedjet/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet1_DeepJetB_sortedjet/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet1_DeepJetB_sortedjet/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet1_DeepJetB_sortedjet/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet1_DeepJetB_sortedjet/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet1_DeepJetB_sortedjet/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet1_DeepJetB_sortedjet/data_obs" 
+  - outputname: Jet1_eta_nB2
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b = 2$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttbb, ttnobb]
+    xlabel: Leading Jet $\eta$ 
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet1_eta/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet1_eta/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet1_eta/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet1_eta/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet1_eta/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet1_eta/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet1_eta/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet1_eta/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet1_eta/data_obs" 
+  - outputname: Jet1_pt_nB2
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b = 2$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttbb, ttnobb]
+    xlabel: Leading Jet $p_{T}$ (GeV)
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet1_pt/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet1_pt/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet1_pt/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet1_pt/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet1_pt/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet1_pt/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet1_pt/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet1_pt/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet1_pt/data_obs" 
+  - outputname: Jet2_DeepJetB_nB2
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b = 2$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttbb, ttnobb]
+    xlabel: Subleading $p_T$ Jet b tag Discriminant
+    xrange: [0, 1]
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet2_DeepJetB/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet2_DeepJetB/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet2_DeepJetB/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet2_DeepJetB/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet2_DeepJetB/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet2_DeepJetB/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet2_DeepJetB/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet2_DeepJetB/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet2_DeepJetB/data_obs" 
+  - outputname: Jet2_DeepJetB_sortedjet_nB2
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b = 2$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttbb, ttnobb]
+    xlabel: Subleading b tagged Jet b tag Discriminant
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet2_DeepJetB_sortedjet/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet2_DeepJetB_sortedjet/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet2_DeepJetB_sortedjet/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet2_DeepJetB_sortedjet/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet2_DeepJetB_sortedjet/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet2_DeepJetB_sortedjet/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet2_DeepJetB_sortedjet/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet2_DeepJetB_sortedjet/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet2_DeepJetB_sortedjet/data_obs" 
+  - outputname: Jet2_eta_nB2
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b = 2$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttbb, ttnobb]
+    xlabel: Subleading Jet $\eta$ 
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet2_eta/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet2_eta/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet2_eta/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet2_eta/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet2_eta/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet2_eta/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet2_eta/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet2_eta/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet2_eta/data_obs" 
+  - outputname: Jet2_pt_nB2
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b = 2$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttbb, ttnobb]
+    xlabel: Subleading Jet $p_{T}$ (GeV)
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet2_pt/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet2_pt/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet2_pt/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet2_pt/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet2_pt/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet2_pt/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet2_pt/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet2_pt/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet2_pt/data_obs" 
+  - outputname: Jet3_DeepJetB_nB2
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b = 2$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttbb, ttnobb]
+    xlabel: Third Highest $p_T$ Jet b tag Discriminant
+    xrange: [0, 1]
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet3_DeepJetB/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet3_DeepJetB/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet3_DeepJetB/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet3_DeepJetB/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet3_DeepJetB/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet3_DeepJetB/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet3_DeepJetB/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet3_DeepJetB/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet3_DeepJetB/data_obs" 
+  - outputname: Jet3_DeepJetB_sortedjet_nB2
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b = 2$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttbb, ttnobb]
+    xlabel: Third Highest b tagged Jet b tag Discriminant
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet3_DeepJetB_sortedjet/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet3_DeepJetB_sortedjet/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet3_DeepJetB_sortedjet/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet3_DeepJetB_sortedjet/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet3_DeepJetB_sortedjet/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet3_DeepJetB_sortedjet/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet3_DeepJetB_sortedjet/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet3_DeepJetB_sortedjet/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet3_DeepJetB_sortedjet/data_obs" 
+  - outputname: Jet3_eta_nB2
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b = 2$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttbb, ttnobb]
+    xlabel: Third Highest $p_T$ Jet $\eta$ 
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet3_eta/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet3_eta/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet3_eta/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet3_eta/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet3_eta/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet3_eta/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet3_eta/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet3_eta/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet3_eta/data_obs" 
+  - outputname: Jet3_pt_nB2
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b = 2$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttbb, ttnobb]
+    xlabel: Third Highest $p_T$ Jet $p_{T}$ (GeV)
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet3_pt/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet3_pt/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet3_pt/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet3_pt/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet3_pt/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet3_pt/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet3_pt/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet3_pt/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet3_pt/data_obs" 
+  - outputname: Jet4_DeepJetB_nB2
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b = 2$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttbb, ttnobb]
+    xlabel: Fourth Highest $p_T$ Jet b tag Discriminant
+    xrange: [0, 1]
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet4_DeepJetB/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet4_DeepJetB/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet4_DeepJetB/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet4_DeepJetB/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet4_DeepJetB/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet4_DeepJetB/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet4_DeepJetB/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet4_DeepJetB/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet4_DeepJetB/data_obs" 
+  - outputname: Jet4_DeepJetB_sortedjet_nB2
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b = 2$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttbb, ttnobb]
+    xlabel: Fourth Highest b tagged Jet b tag Discriminant
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet4_DeepJetB_sortedjet/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet4_DeepJetB_sortedjet/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet4_DeepJetB_sortedjet/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet4_DeepJetB_sortedjet/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet4_DeepJetB_sortedjet/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet4_DeepJetB_sortedjet/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet4_DeepJetB_sortedjet/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet4_DeepJetB_sortedjet/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet4_DeepJetB_sortedjet/data_obs" 
+  - outputname: Jet4_eta_nB2
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b = 2$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttbb, ttnobb]
+    xlabel: Fourth Highest $p_T$ Jet $\eta$ 
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet4_eta/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet4_eta/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet4_eta/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet4_eta/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet4_eta/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet4_eta/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet4_eta/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet4_eta/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet4_eta/data_obs" 
+  - outputname: Jet4_pt_nB2
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b = 2$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttbb, ttnobb]
+    xlabel: Fourth Highest $p_T$ Jet $p_T$ (GeV)
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet4_pt/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet4_pt/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet4_pt/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet4_pt/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet4_pt/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet4_pt/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet4_pt/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet4_pt/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Jet4_pt/data_obs" 
+  - outputname: MET_phi_nB2
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b = 2$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttbb, ttnobb]
+    xlabel: $\phi^{MET}$ 
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___MET_phi/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___MET_phi/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___MET_phi/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___MET_phi/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___MET_phi/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___MET_phi/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___MET_phi/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___MET_phi/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___MET_phi/data_obs" 
+  - outputname: MET_pt_nB2
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b = 2$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttbb, ttnobb]
+    xlabel: $p_{T}^{MET}$ (GeV)
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___MET_pt/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___MET_pt/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___MET_pt/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___MET_pt/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___MET_pt/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___MET_pt/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___MET_pt/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___MET_pt/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___MET_pt/data_obs" 
+  - outputname: MTofMETandEl_nB2
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b = 2$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttbb, ttnobb]
+    xlabel: $m_T$ of MET and electron (GeV) 
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___MTofMETandEl/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___MTofMETandEl/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___MTofMETandEl/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___MTofMETandEl/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___MTofMETandEl/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___MTofMETandEl/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___MTofMETandEl/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___MTofMETandEl/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___MTofMETandEl/data_obs" 
+  - outputname: MTofMETandMu_nB2
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b = 2$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttbb, ttnobb]
+    xlabel: $m_T$ of MET and muon (GeV)
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___MTofMETandMu/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___MTofMETandMu/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___MTofMETandMu/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___MTofMETandMu/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___MTofMETandMu/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___MTofMETandMu/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___MTofMETandMu/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___MTofMETandMu/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___MTofMETandMu/data_obs" 
+  - outputname: Muon1_eta_nB2
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b = 2$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttbb, ttnobb]
+    xlabel: Leading Muon $\eta$ 
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Muon1_eta/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Muon1_eta/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Muon1_eta/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Muon1_eta/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Muon1_eta/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Muon1_eta/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Muon1_eta/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Muon1_eta/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Muon1_eta/data_obs" 
+  - outputname: Muon1_pt_nB2
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b = 2$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttbb, ttnobb]
+    xlabel: Leading Muon $p_{T}$ 
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Muon1_pt/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Muon1_pt/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Muon1_pt/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Muon1_pt/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Muon1_pt/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Muon1_pt/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Muon1_pt/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Muon1_pt/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Muon1_pt/data_obs" 
+  # - outputname: Muon_dz_nB2
+  #   file: prefit_PAS_RunII_All.root
+  #   llabel: "OSDL, $\\mathit{N}_b = 2$"
+  #   ordering: [tttt, ewk, ttrare, ttV, ttH, ttbb, ttnobb]
+  #   xlabel: Muon $\Delta z$ 
+  #   xrange: [-0.02, 0.02]
+  #   processmap:
+  #   - name: ewk
+  #     histname: 
+  #     - "HT500_nMediumDeepJetB2_nJet4p___Muon_dz/EWK"
+  #   - name: ttrare
+  #     histname: 
+  #     - "HT500_nMediumDeepJetB2_nJet4p___Muon_dz/tt + rare"
+  #   - name: ttV
+  #     histname: 
+  #     - "HT500_nMediumDeepJetB2_nJet4p___Muon_dz/tt + V"
+  #   - name: ttH
+  #     histname: 
+  #     - "HT500_nMediumDeepJetB2_nJet4p___Muon_dz/tt + H"
+  #   - name: ttnobb
+  #     histname: 
+  #     - "HT500_nMediumDeepJetB2_nJet4p___Muon_dz/tt + !bb"
+  #   - name: ttbb
+  #     histname: 
+  #     - "HT500_nMediumDeepJetB2_nJet4p___Muon_dz/tt + bb"
+  #   - name: tttt
+  #     histname: 
+  #     - "HT500_nMediumDeepJetB2_nJet4p___Muon_dz/tttt"
+  #   - name: total
+  #     histname: 
+  #     - "HT500_nMediumDeepJetB2_nJet4p___Muon_dz/TotalProcs"
+  #   - name: data_obs
+  #     histname: 
+  #     - "HT500_nMediumDeepJetB2_nJet4p___Muon_dz/data_obs" 
+  # - outputname: Muon_ip3d_nB2
+  #   file: prefit_PAS_RunII_All.root
+  #   llabel: "OSDL, $\\mathit{N}_b = 2$"
+  #   ordering: [tttt, ewk, ttrare, ttV, ttH, ttbb, ttnobb]
+  #   xlabel: Muon IP3D 
+  #   xrange: [0, 0.1]
+  #   processmap:
+  #   - name: ewk
+  #     histname: 
+  #     - "HT500_nMediumDeepJetB2_nJet4p___Muon_ip3d/EWK"
+  #   - name: ttrare
+  #     histname: 
+  #     - "HT500_nMediumDeepJetB2_nJet4p___Muon_ip3d/tt + rare"
+  #   - name: ttV
+  #     histname: 
+  #     - "HT500_nMediumDeepJetB2_nJet4p___Muon_ip3d/tt + V"
+  #   - name: ttH
+  #     histname: 
+  #     - "HT500_nMediumDeepJetB2_nJet4p___Muon_ip3d/tt + H"
+  #   - name: ttnobb
+  #     histname: 
+  #     - "HT500_nMediumDeepJetB2_nJet4p___Muon_ip3d/tt + !bb"
+  #   - name: ttbb
+  #     histname: 
+  #     - "HT500_nMediumDeepJetB2_nJet4p___Muon_ip3d/tt + bb"
+  #   - name: tttt
+  #     histname: 
+  #     - "HT500_nMediumDeepJetB2_nJet4p___Muon_ip3d/tttt"
+  #   - name: total
+  #     histname: 
+  #     - "HT500_nMediumDeepJetB2_nJet4p___Muon_ip3d/TotalProcs"
+  #   - name: data_obs
+  #     histname: 
+  #     - "HT500_nMediumDeepJetB2_nJet4p___Muon_ip3d/data_obs" 
+  - outputname: Muon_pfRelIso03_all_nB2
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b = 2$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttbb, ttnobb]
+    xlabel: Muon PF Relative Isolation
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Muon_pfRelIso03_all/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Muon_pfRelIso03_all/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Muon_pfRelIso03_all/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Muon_pfRelIso03_all/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Muon_pfRelIso03_all/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Muon_pfRelIso03_all/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Muon_pfRelIso03_all/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Muon_pfRelIso03_all/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Muon_pfRelIso03_all/data_obs" 
+  - outputname: Muon_pfRelIso03_chg_nB2
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b = 2$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttbb, ttnobb]
+    xlabel: Muon PF Relative Isolation (charged)
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Muon_pfRelIso03_chg/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Muon_pfRelIso03_chg/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Muon_pfRelIso03_chg/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Muon_pfRelIso03_chg/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Muon_pfRelIso03_chg/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Muon_pfRelIso03_chg/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Muon_pfRelIso03_chg/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Muon_pfRelIso03_chg/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___Muon_pfRelIso03_chg/data_obs" 
+  - outputname: nJet_nB2
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b = 2$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttbb, ttnobb]
+    xlabel: Number of Jets 
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___nJet/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___nJet/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___nJet/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___nJet/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___nJet/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___nJet/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___nJet/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___nJet/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___nJet/data_obs" 
+  - outputname: nJet_MediumDeepJet_nB2
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b = 2$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttbb, ttnobb]
+    xlabel: Number of Medium-b tagged Jets 
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___nJet_MediumDeepJet/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___nJet_MediumDeepJet/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___nJet_MediumDeepJet/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___nJet_MediumDeepJet/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___nJet_MediumDeepJet/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___nJet_MediumDeepJet/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___nJet_MediumDeepJet/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___nJet_MediumDeepJet/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___nJet_MediumDeepJet/data_obs" 
+  - outputname: nLooseFTALepton_nB2
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b = 2$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttbb, ttnobb]
+    xlabel: Number of Loose Leptons 
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___nLooseFTALepton/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___nLooseFTALepton/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___nLooseFTALepton/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___nLooseFTALepton/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___nLooseFTALepton/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___nLooseFTALepton/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___nLooseFTALepton/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___nLooseFTALepton/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___nLooseFTALepton/data_obs" 
+  - outputname: nMediumFTALepton_nB2
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b = 2$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttbb, ttnobb]
+    xlabel: Number of Medium Leptons 
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___nMediumFTALepton/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___nMediumFTALepton/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___nMediumFTALepton/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___nMediumFTALepton/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___nMediumFTALepton/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___nMediumFTALepton/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___nMediumFTALepton/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___nMediumFTALepton/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___nMediumFTALepton/data_obs" 
+  - outputname: nTightFTALepton_nB2
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b = 2$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttbb, ttnobb]
+    xlabel: Number of Tight Leptons 
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___nTightFTALepton/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___nTightFTALepton/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___nTightFTALepton/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___nTightFTALepton/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___nTightFTALepton/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___nTightFTALepton/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___nTightFTALepton/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___nTightFTALepton/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB2_nJet4p___nTightFTALepton/data_obs" 
+  - outputname: dRbb_nB3p
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b \\geq 3$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttnobb, ttbb]
+    xlabel: $\Delta R_{bb}$ 
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___dRbb/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___dRbb/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___dRbb/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___dRbb/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___dRbb/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___dRbb/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___dRbb/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___dRbb/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___dRbb/data_obs" 
+  - outputname: dRll_nB3p
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b \\geq 3$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttnobb, ttbb]
+    xlabel: $\Delta R_{\ell\ell}$ 
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___dRll/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___dRll/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___dRll/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___dRll/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___dRll/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___dRll/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___dRll/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___dRll/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___dRll/data_obs" 
+  - outputname: Electron1_eta_nB3p
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b \\geq 3$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttnobb, ttbb]
+    xlabel: Leading Electron $\eta$ 
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Electron1_eta/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Electron1_eta/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Electron1_eta/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Electron1_eta/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Electron1_eta/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Electron1_eta/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Electron1_eta/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Electron1_eta/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Electron1_eta/data_obs" 
+  - outputname: Electron1_pt_nB3p
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b \\geq 3$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttnobb, ttbb]
+    xlabel: Leading Electron $p_{T}$ (GeV)
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Electron1_pt/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Electron1_pt/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Electron1_pt/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Electron1_pt/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Electron1_pt/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Electron1_pt/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Electron1_pt/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Electron1_pt/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Electron1_pt/data_obs" 
+  # - outputname: Electron_dz_nB3p
+  #   file: prefit_PAS_RunII_All.root
+  #   llabel: "OSDL, $\\mathit{N}_b \\geq 3$"
+  #   ordering: [tttt, ewk, ttrare, ttV, ttH, ttnobb, ttbb]
+  #   xlabel: Electron $\Delta z$ 
+  #   xrange: [-0.02, 0.02]
+  #   processmap:
+  #   - name: ewk
+  #     histname: 
+  #     - "HT500_nMediumDeepJetB3p_nJet4p___Electron_dz/EWK"
+  #   - name: ttrare
+  #     histname: 
+  #     - "HT500_nMediumDeepJetB3p_nJet4p___Electron_dz/tt + rare"
+  #   - name: ttV
+  #     histname: 
+  #     - "HT500_nMediumDeepJetB3p_nJet4p___Electron_dz/tt + V"
+  #   - name: ttH
+  #     histname: 
+  #     - "HT500_nMediumDeepJetB3p_nJet4p___Electron_dz/tt + H"
+  #   - name: ttnobb
+  #     histname: 
+  #     - "HT500_nMediumDeepJetB3p_nJet4p___Electron_dz/tt + !bb"
+  #   - name: ttbb
+  #     histname: 
+  #     - "HT500_nMediumDeepJetB3p_nJet4p___Electron_dz/tt + bb"
+  #   - name: tttt
+  #     histname: 
+  #     - "HT500_nMediumDeepJetB3p_nJet4p___Electron_dz/tttt"
+  #   - name: total
+  #     histname: 
+  #     - "HT500_nMediumDeepJetB3p_nJet4p___Electron_dz/TotalProcs"
+  #   - name: data_obs
+  #     histname: 
+  #     - "HT500_nMediumDeepJetB3p_nJet4p___Electron_dz/data_obs" 
+  # - outputname: Electron_ip3d_nB3p
+  #   file: prefit_PAS_RunII_All.root
+  #   llabel: "OSDL, $\\mathit{N}_b \\geq 3$"
+  #   ordering: [tttt, ewk, ttrare, ttV, ttH, ttnobb, ttbb]
+  #   xlabel: Electron IP3D 
+  #   xrange: [0, 0.1]
+  #   processmap:
+  #   - name: ewk
+  #     histname: 
+  #     - "HT500_nMediumDeepJetB3p_nJet4p___Electron_ip3d/EWK"
+  #   - name: ttrare
+  #     histname: 
+  #     - "HT500_nMediumDeepJetB3p_nJet4p___Electron_ip3d/tt + rare"
+  #   - name: ttV
+  #     histname: 
+  #     - "HT500_nMediumDeepJetB3p_nJet4p___Electron_ip3d/tt + V"
+  #   - name: ttH
+  #     histname: 
+  #     - "HT500_nMediumDeepJetB3p_nJet4p___Electron_ip3d/tt + H"
+  #   - name: ttnobb
+  #     histname: 
+  #     - "HT500_nMediumDeepJetB3p_nJet4p___Electron_ip3d/tt + !bb"
+  #   - name: ttbb
+  #     histname: 
+  #     - "HT500_nMediumDeepJetB3p_nJet4p___Electron_ip3d/tt + bb"
+  #   - name: tttt
+  #     histname: 
+  #     - "HT500_nMediumDeepJetB3p_nJet4p___Electron_ip3d/tttt"
+  #   - name: total
+  #     histname: 
+  #     - "HT500_nMediumDeepJetB3p_nJet4p___Electron_ip3d/TotalProcs"
+  #   - name: data_obs
+  #     histname: 
+  #     - "HT500_nMediumDeepJetB3p_nJet4p___Electron_ip3d/data_obs" 
+  - outputname: Electron_pfRelIso03_all_nB3p
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b \\geq 3$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttnobb, ttbb]
+    xlabel: Electron PF Relative Isolation 
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Electron_pfRelIso03_all/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Electron_pfRelIso03_all/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Electron_pfRelIso03_all/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Electron_pfRelIso03_all/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Electron_pfRelIso03_all/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Electron_pfRelIso03_all/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Electron_pfRelIso03_all/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Electron_pfRelIso03_all/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Electron_pfRelIso03_all/data_obs" 
+  - outputname: Electron_pfRelIso03_chg_nB3p
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b \\geq 3$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttnobb, ttbb]
+    xlabel: Electron PF Relative Isolation (charged)
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Electron_pfRelIso03_chg/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Electron_pfRelIso03_chg/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Electron_pfRelIso03_chg/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Electron_pfRelIso03_chg/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Electron_pfRelIso03_chg/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Electron_pfRelIso03_chg/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Electron_pfRelIso03_chg/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Electron_pfRelIso03_chg/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Electron_pfRelIso03_chg/data_obs" 
+  - outputname: H_nB3p
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b \\geq 3$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttnobb, ttbb]
+    xlabel: $H$ (GeV)
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___H/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___H/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___H/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___H/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___H/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___H/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___H/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___H/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___H/data_obs" 
+  - outputname: H2M_nB3p
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b \\geq 3$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttnobb, ttbb]
+    xlabel: $H^{2M}$ (GeV)
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___H2M/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___H2M/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___H2M/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___H2M/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___H2M/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___H2M/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___H2M/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___H2M/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___H2M/data_obs" 
+  - outputname: HT_nB3p
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b \\geq 3$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttnobb, ttbb]
+    xlabel: $H_T$ (GeV)
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___HT/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___HT/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___HT/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___HT/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___HT/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___HT/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___HT/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___HT/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___HT/data_obs" 
+  - outputname: HT2M_nB3p
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b \\geq 3$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttnobb, ttbb]
+    xlabel: $H_T^{2M}$ (GeV)
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___HT2M/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___HT2M/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___HT2M/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___HT2M/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___HT2M/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___HT2M/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___HT2M/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___HT2M/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___HT2M/data_obs" 
+  - outputname: HTb_nB3p
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b \\geq 3$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttnobb, ttbb]
+    xlabel: $H_T^b$ (GeV) 
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___HTb/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___HTb/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___HTb/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___HTb/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___HTb/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___HTb/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___HTb/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___HTb/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___HTb/data_obs" 
+  - outputname: HTH_nB3p
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b \\geq 3$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttnobb, ttbb]
+    xlabel: $\\frac{H_T}{H}$
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___HTH/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___HTH/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___HTH/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___HTH/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___HTH/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___HTH/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___HTH/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___HTH/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___HTH/data_obs" 
+  - outputname: HTRat_nB3p
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b \\geq 3$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttnobb, ttbb]
+    xlabel: $H_T^{Ratio}$ 
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___HTRat/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___HTRat/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___HTRat/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___HTRat/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___HTRat/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___HTRat/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___HTRat/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___HTRat/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___HTRat/data_obs" 
+  - outputname: Jet1_DeepJetB_nB3p
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b \\geq 3$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttnobb, ttbb]
+    xlabel: Leading $p_T$ Jet b tag Discriminant
+    xrange: [0, 1]
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet1_DeepJetB/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet1_DeepJetB/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet1_DeepJetB/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet1_DeepJetB/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet1_DeepJetB/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet1_DeepJetB/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet1_DeepJetB/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet1_DeepJetB/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet1_DeepJetB/data_obs" 
+  - outputname: Jet1_DeepJetB_sortedjet_nB3p
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b \\geq 3$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttnobb, ttbb]
+    xlabel: Leading b tagged Jet b tag Discriminant 
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet1_DeepJetB_sortedjet/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet1_DeepJetB_sortedjet/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet1_DeepJetB_sortedjet/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet1_DeepJetB_sortedjet/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet1_DeepJetB_sortedjet/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet1_DeepJetB_sortedjet/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet1_DeepJetB_sortedjet/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet1_DeepJetB_sortedjet/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet1_DeepJetB_sortedjet/data_obs" 
+  - outputname: Jet1_eta_nB3p
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b \\geq 3$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttnobb, ttbb]
+    xlabel: Leading Jet $\eta$ 
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet1_eta/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet1_eta/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet1_eta/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet1_eta/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet1_eta/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet1_eta/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet1_eta/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet1_eta/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet1_eta/data_obs" 
+  - outputname: Jet1_pt_nB3p
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b \\geq 3$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttnobb, ttbb]
+    xlabel: Leading Jet $p_{T}$ (GeV) 
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet1_pt/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet1_pt/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet1_pt/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet1_pt/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet1_pt/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet1_pt/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet1_pt/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet1_pt/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet1_pt/data_obs" 
+  - outputname: Jet2_DeepJetB_nB3p
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b \\geq 3$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttnobb, ttbb]
+    xlabel: Subeading $p_T$ Jet b tag Discriminant 
+    xrange: [0, 1]
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet2_DeepJetB/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet2_DeepJetB/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet2_DeepJetB/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet2_DeepJetB/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet2_DeepJetB/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet2_DeepJetB/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet2_DeepJetB/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet2_DeepJetB/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet2_DeepJetB/data_obs" 
+  - outputname: Jet2_DeepJetB_sortedjet_nB3p
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b \\geq 3$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttnobb, ttbb]
+    xlabel: Subeading b tagged Jet b tag Discriminant 
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet2_DeepJetB_sortedjet/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet2_DeepJetB_sortedjet/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet2_DeepJetB_sortedjet/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet2_DeepJetB_sortedjet/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet2_DeepJetB_sortedjet/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet2_DeepJetB_sortedjet/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet2_DeepJetB_sortedjet/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet2_DeepJetB_sortedjet/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet2_DeepJetB_sortedjet/data_obs" 
+  - outputname: Jet2_eta_nB3p
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b \\geq 3$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttnobb, ttbb]
+    xlabel: Subleading Jet $\eta$ 
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet2_eta/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet2_eta/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet2_eta/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet2_eta/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet2_eta/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet2_eta/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet2_eta/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet2_eta/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet2_eta/data_obs" 
+  - outputname: Jet2_pt_nB3p
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b \\geq 3$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttnobb, ttbb]
+    xlabel: Subleading Jet $p_{T}$ (GeV)
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet2_pt/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet2_pt/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet2_pt/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet2_pt/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet2_pt/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet2_pt/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet2_pt/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet2_pt/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet2_pt/data_obs" 
+  - outputname: Jet3_DeepJetB_nB3p
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b \\geq 3$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttnobb, ttbb]
+    xlabel: Third Highest $p_T$ Jet b tag Discriminant
+    xrange: [0, 1]
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet3_DeepJetB/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet3_DeepJetB/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet3_DeepJetB/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet3_DeepJetB/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet3_DeepJetB/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet3_DeepJetB/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet3_DeepJetB/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet3_DeepJetB/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet3_DeepJetB/data_obs" 
+  - outputname: Jet3_DeepJetB_sortedjet_nB3p
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b \\geq 3$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttnobb, ttbb]
+    xlabel: Third Highest b tagged Jet b tag Discriminant
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet3_DeepJetB_sortedjet/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet3_DeepJetB_sortedjet/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet3_DeepJetB_sortedjet/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet3_DeepJetB_sortedjet/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet3_DeepJetB_sortedjet/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet3_DeepJetB_sortedjet/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet3_DeepJetB_sortedjet/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet3_DeepJetB_sortedjet/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet3_DeepJetB_sortedjet/data_obs" 
+  - outputname: Jet3_eta_nB3p
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b \\geq 3$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttnobb, ttbb]
+    xlabel: Third Highest $p_T$ Jet $\eta$ 
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet3_eta/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet3_eta/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet3_eta/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet3_eta/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet3_eta/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet3_eta/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet3_eta/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet3_eta/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet3_eta/data_obs" 
+  - outputname: Jet3_pt_nB3p
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b \\geq 3$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttnobb, ttbb]
+    xlabel: Third Highest $p_T$ Jet $p_{T}$ (GeV)
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet3_pt/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet3_pt/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet3_pt/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet3_pt/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet3_pt/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet3_pt/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet3_pt/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet3_pt/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet3_pt/data_obs" 
+  - outputname: Jet4_DeepJetB_nB3p
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b \\geq 3$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttnobb, ttbb]
+    xlabel: Fourth Highest $p_T$ Jet b tag Discriminant
+    xrange: [0, 1]
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet4_DeepJetB/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet4_DeepJetB/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet4_DeepJetB/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet4_DeepJetB/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet4_DeepJetB/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet4_DeepJetB/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet4_DeepJetB/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet4_DeepJetB/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet4_DeepJetB/data_obs" 
+  - outputname: Jet4_DeepJetB_sortedjet_nB3p
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b \\geq 3$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttnobb, ttbb]
+    xlabel: Fourth Highest b tagged Jet b tag Discriminant
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet4_DeepJetB_sortedjet/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet4_DeepJetB_sortedjet/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet4_DeepJetB_sortedjet/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet4_DeepJetB_sortedjet/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet4_DeepJetB_sortedjet/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet4_DeepJetB_sortedjet/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet4_DeepJetB_sortedjet/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet4_DeepJetB_sortedjet/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet4_DeepJetB_sortedjet/data_obs" 
+  - outputname: Jet4_eta_nB3p
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b \\geq 3$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttnobb, ttbb]
+    xlabel: Fourth Highest $p_T$ Jet $\eta$ 
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet4_eta/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet4_eta/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet4_eta/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet4_eta/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet4_eta/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet4_eta/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet4_eta/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet4_eta/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet4_eta/data_obs" 
+  - outputname: Jet4_pt_nB3p
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b \\geq 3$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttnobb, ttbb]
+    xlabel: Fourth Highest $p_T$ Jet $p_{T}$ (GeV)
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet4_pt/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet4_pt/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet4_pt/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet4_pt/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet4_pt/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet4_pt/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet4_pt/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet4_pt/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Jet4_pt/data_obs" 
+  - outputname: MET_phi_nB3p
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b \\geq 3$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttnobb, ttbb]
+    xlabel: $\phi^{MET}$ 
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___MET_phi/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___MET_phi/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___MET_phi/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___MET_phi/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___MET_phi/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___MET_phi/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___MET_phi/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___MET_phi/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___MET_phi/data_obs" 
+  - outputname: MET_pt_nB3p
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b \\geq 3$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttnobb, ttbb]
+    xlabel: $p_{T}^{MET}$ (GeV) 
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___MET_pt/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___MET_pt/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___MET_pt/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___MET_pt/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___MET_pt/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___MET_pt/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___MET_pt/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___MET_pt/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___MET_pt/data_obs" 
+  - outputname: MTofMETandEl_nB3p
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b \\geq 3$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttnobb, ttbb]
+    xlabel: $m_T$ of MET and electron (GeV)
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___MTofMETandEl/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___MTofMETandEl/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___MTofMETandEl/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___MTofMETandEl/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___MTofMETandEl/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___MTofMETandEl/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___MTofMETandEl/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___MTofMETandEl/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___MTofMETandEl/data_obs" 
+  - outputname: MTofMETandMu_nB3p
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b \\geq 3$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttnobb, ttbb]
+    xlabel: $m_T$ of MET and muon (GeV)
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___MTofMETandMu/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___MTofMETandMu/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___MTofMETandMu/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___MTofMETandMu/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___MTofMETandMu/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___MTofMETandMu/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___MTofMETandMu/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___MTofMETandMu/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___MTofMETandMu/data_obs" 
+  - outputname: Muon1_eta_nB3p
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b \\geq 3$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttnobb, ttbb]
+    xlabel: Leading Muon $\eta$ 
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Muon1_eta/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Muon1_eta/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Muon1_eta/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Muon1_eta/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Muon1_eta/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Muon1_eta/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Muon1_eta/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Muon1_eta/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Muon1_eta/data_obs" 
+  - outputname: Muon1_pt_nB3p
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b \\geq 3$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttnobb, ttbb]
+    xlabel: Leading Muon $p_{T}$ (GeV)
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Muon1_pt/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Muon1_pt/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Muon1_pt/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Muon1_pt/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Muon1_pt/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Muon1_pt/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Muon1_pt/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Muon1_pt/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Muon1_pt/data_obs" 
+  # - outputname: Muon_dz_nB3p
+  #   file: prefit_PAS_RunII_All.root
+  #   llabel: "OSDL, $\\mathit{N}_b \\geq 3$"
+  #   ordering: [tttt, ewk, ttrare, ttV, ttH, ttnobb, ttbb]
+  #   xlabel: Muon $\Delta z$ 
+  #   xrange: [-0.02, 0.02]
+  #   processmap:
+  #   - name: ewk
+  #     histname: 
+  #     - "HT500_nMediumDeepJetB3p_nJet4p___Muon_dz/EWK"
+  #   - name: ttrare
+  #     histname: 
+  #     - "HT500_nMediumDeepJetB3p_nJet4p___Muon_dz/tt + rare"
+  #   - name: ttV
+  #     histname: 
+  #     - "HT500_nMediumDeepJetB3p_nJet4p___Muon_dz/tt + V"
+  #   - name: ttH
+  #     histname: 
+  #     - "HT500_nMediumDeepJetB3p_nJet4p___Muon_dz/tt + H"
+  #   - name: ttnobb
+  #     histname: 
+  #     - "HT500_nMediumDeepJetB3p_nJet4p___Muon_dz/tt + !bb"
+  #   - name: ttbb
+  #     histname: 
+  #     - "HT500_nMediumDeepJetB3p_nJet4p___Muon_dz/tt + bb"
+  #   - name: tttt
+  #     histname: 
+  #     - "HT500_nMediumDeepJetB3p_nJet4p___Muon_dz/tttt"
+  #   - name: total
+  #     histname: 
+  #     - "HT500_nMediumDeepJetB3p_nJet4p___Muon_dz/TotalProcs"
+  #   - name: data_obs
+  #     histname: 
+  #     - "HT500_nMediumDeepJetB3p_nJet4p___Muon_dz/data_obs" 
+  # - outputname: Muon_ip3d_nB3p
+  #   file: prefit_PAS_RunII_All.root
+  #   llabel: "OSDL, $\\mathit{N}_b \\geq 3$"
+  #   ordering: [tttt, ewk, ttrare, ttV, ttH, ttnobb, ttbb]
+  #   xlabel: Muon IP3D 
+  #   xrange: [0, 0.1]
+  #   processmap:
+  #   - name: ewk
+  #     histname: 
+  #     - "HT500_nMediumDeepJetB3p_nJet4p___Muon_ip3d/EWK"
+  #   - name: ttrare
+  #     histname: 
+  #     - "HT500_nMediumDeepJetB3p_nJet4p___Muon_ip3d/tt + rare"
+  #   - name: ttV
+  #     histname: 
+  #     - "HT500_nMediumDeepJetB3p_nJet4p___Muon_ip3d/tt + V"
+  #   - name: ttH
+  #     histname: 
+  #     - "HT500_nMediumDeepJetB3p_nJet4p___Muon_ip3d/tt + H"
+  #   - name: ttnobb
+  #     histname: 
+  #     - "HT500_nMediumDeepJetB3p_nJet4p___Muon_ip3d/tt + !bb"
+  #   - name: ttbb
+  #     histname: 
+  #     - "HT500_nMediumDeepJetB3p_nJet4p___Muon_ip3d/tt + bb"
+  #   - name: tttt
+  #     histname: 
+  #     - "HT500_nMediumDeepJetB3p_nJet4p___Muon_ip3d/tttt"
+  #   - name: total
+  #     histname: 
+  #     - "HT500_nMediumDeepJetB3p_nJet4p___Muon_ip3d/TotalProcs"
+  #   - name: data_obs
+  #     histname: 
+  #     - "HT500_nMediumDeepJetB3p_nJet4p___Muon_ip3d/data_obs" 
+  - outputname: Muon_pfRelIso03_all_nB3p
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b \\geq 3$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttnobb, ttbb]
+    xlabel: Muon PF Relative Isolation
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Muon_pfRelIso03_all/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Muon_pfRelIso03_all/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Muon_pfRelIso03_all/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Muon_pfRelIso03_all/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Muon_pfRelIso03_all/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Muon_pfRelIso03_all/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Muon_pfRelIso03_all/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Muon_pfRelIso03_all/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Muon_pfRelIso03_all/data_obs" 
+  - outputname: Muon_pfRelIso03_chg_nB3p
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b \\geq 3$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttnobb, ttbb]
+    xlabel: Muon PF Relative Isolation (charged)
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Muon_pfRelIso03_chg/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Muon_pfRelIso03_chg/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Muon_pfRelIso03_chg/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Muon_pfRelIso03_chg/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Muon_pfRelIso03_chg/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Muon_pfRelIso03_chg/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Muon_pfRelIso03_chg/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Muon_pfRelIso03_chg/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___Muon_pfRelIso03_chg/data_obs" 
+  - outputname: nJet_nB3p
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b \\geq 3$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttnobb, ttbb]
+    xlabel: Number of Jets 
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___nJet/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___nJet/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___nJet/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___nJet/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___nJet/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___nJet/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___nJet/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___nJet/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___nJet/data_obs" 
+  - outputname: nJet_MediumDeepJet_nB3p
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b \\geq 3$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttnobb, ttbb]
+    xlabel: Number of Medium-b tagged Jets 
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___nJet_MediumDeepJet/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___nJet_MediumDeepJet/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___nJet_MediumDeepJet/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___nJet_MediumDeepJet/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___nJet_MediumDeepJet/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___nJet_MediumDeepJet/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___nJet_MediumDeepJet/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___nJet_MediumDeepJet/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___nJet_MediumDeepJet/data_obs" 
+  - outputname: nLooseFTALepton_nB3p
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b \\geq 3$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttnobb, ttbb]
+    xlabel: Number of Loose Leptons 
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___nLooseFTALepton/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___nLooseFTALepton/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___nLooseFTALepton/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___nLooseFTALepton/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___nLooseFTALepton/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___nLooseFTALepton/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___nLooseFTALepton/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___nLooseFTALepton/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___nLooseFTALepton/data_obs" 
+  - outputname: nMediumFTALepton_nB3p
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b \\geq 3$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttnobb, ttbb]
+    xlabel: Number of Medium Leptons 
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___nMediumFTALepton/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___nMediumFTALepton/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___nMediumFTALepton/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___nMediumFTALepton/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___nMediumFTALepton/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___nMediumFTALepton/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___nMediumFTALepton/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___nMediumFTALepton/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___nMediumFTALepton/data_obs" 
+  - outputname: nTightFTALepton_nB3p
+    file: prefit_PAS_RunII_All.root
+    llabel: "OSDL, $\\mathit{N}_b \\geq 3$"
+    ordering: [tttt, ewk, ttrare, ttV, ttH, ttnobb, ttbb]
+    xlabel: Number of Tight Leptons 
+    processmap:
+    - name: ewk
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___nTightFTALepton/EWK"
+    - name: ttrare
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___nTightFTALepton/tt + rare"
+    - name: ttV
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___nTightFTALepton/tt + V"
+    - name: ttH
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___nTightFTALepton/tt + H"
+    - name: ttnobb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___nTightFTALepton/tt + !bb"
+    - name: ttbb
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___nTightFTALepton/tt + bb"
+    - name: tttt
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___nTightFTALepton/tttt"
+    - name: total
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___nTightFTALepton/TotalProcs"
+    - name: data_obs
+      histname: 
+      - "HT500_nMediumDeepJetB3p_nJet4p___nTightFTALepton/data_obs" 
