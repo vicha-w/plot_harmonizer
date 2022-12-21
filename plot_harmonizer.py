@@ -38,6 +38,7 @@ default_opts = {
     "mainratio": False,
     "ratio": False,
     "ratiorange": [0, 2],
+    "xrange": None,
     "yrange": None,
     "logy": False,
     "logy_legacy": False,
@@ -280,7 +281,9 @@ for plot in yamlspec["plots"]:
         main_ax.set_xlim(0, sum(mountainrange_nbins))
         main_ax.set_xticklabels([])
     else:
-        main_ax.set_xlim(min(histbins), max(histbins))
+        if opts["xrange"] is not None:
+            main_ax.set_xlim(opts["xrange"])
+        else: main_ax.set_xlim(min(histbins), max(histbins))
         main_ax.yaxis.get_major_ticks()[0].set_visible(False)
 
     if opts["logy"]: main_ax.set_yscale("log")
@@ -318,7 +321,10 @@ for plot in yamlspec["plots"]:
         if opts["mountainrange"]: 
             ratio_ax.set_xticklabels([])
             ratio_ax.set_xlim(0, sum(mountainrange_nbins))
-        else: ratio_ax.set_xlim(min(histbins), max(histbins))
+        else: 
+            if opts["xrange"] is not None:
+                ratio_ax.set_xlim(opts["xrange"])
+            else: ratio_ax.set_xlim(min(histbins), max(histbins))
         main_ax.set_xticklabels([])
         fig.align_ylabels([main_ax, ratio_ax])
     else: 
