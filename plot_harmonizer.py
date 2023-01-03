@@ -38,6 +38,7 @@ default_opts = {
     "mainratio": False,
     "ratio": False,
     "ratiorange": [0, 2],
+    "totalerrname": "Postfit unc.",
     "xrange": None,
     "yrange": None,
     "logy": False,
@@ -212,7 +213,7 @@ for plot in yamlspec["plots"]:
             edgecolor=None,
             facecolor="black",
             fill=False,
-            label="Postfit unc.",
+            label=opts["totalerrname"],
             hatch="///",
             linewidth=0,
             linestyle=None

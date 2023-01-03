@@ -3,6 +3,7 @@ common_opts:
   outputdir: plots
   figsize: [12, 10]
   xlabel: Jet multiplicity
+  totalerrname: Prefit unc.
   ylabel_main: Events / bin
   ylabel_ratio: Data / Sim
   logy: true

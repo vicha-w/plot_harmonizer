@@ -43,6 +43,7 @@ Details of additional options are as follows:
 - `mainratio`: Make ratio plot as main plot, with y-axis as percentage. Default is `False`
 - `ratio`: Add ratio plot at the bottom of main plot. Default is `False`
 - `ratiorange`: Range of ratio plot. Default is `[0, 2]`
+- `totalerrname`: Name of total error to be displayed in the plot. Default is `"Postfit unc."`
 - `xrange`: Range of x-axis. Must be a list with two numbers. Default is `None`
 - `yrange`: Range of main y-axis _before allocating whitespace, as in `whitespace` option_. Default is `None`
 - `logy`: Set log scale on y-axis. Default is `False`
